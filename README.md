@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Gridsome Blog Starter
 
 > A simple, hackable & minimalistic starter for Gridsome that uses Markdown for content.
@@ -27,3 +28,7 @@ https://gridsome-starter-blog.netlify.com
 2. `cd my-gridsome-site` to open folder
 3. `gridsome develop` to start local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+=======
+# pbaba-blog
+My Personal Blog with Gridsome and Netlify
+>>>>>>> 94a9f4bc9cafa2348fc986ff0b3634f485544a7b
