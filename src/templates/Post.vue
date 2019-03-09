@@ -25,14 +25,20 @@
       <!-- Add comment widgets here -->
       <div id="disqus_thread"></div>  
       <h3 id="newsletter"><strong>Subscribe to my Newsletter.</strong></h3>  
-      <form name="subscription_list" method="POST" data-netlify="true" netlify>
+      <form @submit.prevent="handleSubmit" name="subscription_list" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
         <p>
-          <input type="email" id="email" name="email" placeholder="Email" />
+          <input 
+          type="email" 
+          id="email" 
+          name="email" 
+         @input="ev => form.email = ev.target.value"
+          placeholder="Email" 
+          />
         </p>
         <p>
           <button type="submit">Subscribe</button>
         </p>
-        <h9>Subscribe to get my latest content by email, i wont send you spam.</h9>
+        <h6>Subscribe to get my latest content by email, i wont send you spam.</h6>
     </form>
   </div>
 
@@ -41,6 +47,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import PostMeta from '~/components/PostMeta';
 import PostTags from '~/components/PostTags';
 import Author from '~/components/Author.vue';
@@ -68,6 +75,34 @@ export default {
     s.src = 'https://paschal-dev.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
+  },
+  methods: {
+    encode(data) {
+      console.log(data);
+      return Object.keys(data)
+        .map(key => `${encodeURIComponent(key)} = ${encodeURIComponent(data[key])}`)
+        .join('&');
+    },
+    handleSubmit() {
+      const axiosConfig = {
+        header: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      };
+      axios.post('/', this.encode({
+        'form-name': 'subscription_list',
+        ...this.form,
+      }),
+      axiosConfig,
+      );
+    },
+  },
+  data() {
+    return {
+      form: {
+        email: '',
+      },
+    };
   },
 };
 </script>
@@ -145,7 +180,7 @@ form p input{
 form p button{
   padding: 10px;
 }
-h9 {
+h6 {
   font-size: 13px;
   font-style: italic;
 }
