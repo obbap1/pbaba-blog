@@ -62,7 +62,7 @@ export default {
       ],
     };
   },
-  created() {
+  mounted() {
     const d = window.document;
     const s = d.createElement('script');
     s.src = 'https://paschal-dev.disqus.com/embed.js';
