@@ -25,9 +25,9 @@
       <!-- Add comment widgets here -->
       <div id="disqus_thread"></div>  
       <h3 id="newsletter"><strong>Subscribe to my Newsletter.</strong></h3>  
-      <form name="subscription_list" method="POST" data-netlify="true">
+      <form name="subscription_list" method="POST" data-netlify="true" netlify>
         <p>
-          <input type="email" name="email" placeholder="Email" />
+          <input type="email" id="email" name="email" placeholder="Email" />
         </p>
         <p>
           <button type="submit">Subscribe</button>
