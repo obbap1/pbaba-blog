@@ -23,7 +23,18 @@
 
     <div class="post-comments">
       <!-- Add comment widgets here -->
-    </div>
+      <div id="disqus_thread"></div>  
+      <h3 id="newsletter"><strong>Subscribe to my Newsletter.</strong></h3>  
+      <form name="subscription_list" method="POST" data-netlify="true">
+        <p>
+          <input type="email" name="email" placeholder="Email" />
+        </p>
+        <p>
+          <button type="submit">Subscribe</button>
+        </p>
+        <h9>Subscribe to get my latest content by email, i wont send you spam.</h9>
+    </form>
+  </div>
 
     <Author class="post-author" />
   </Layout>
@@ -50,6 +61,13 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    const d = document;
+    const s = d.createElement('script');
+    s.src = 'https://paschal-dev.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
   },
 };
 </script>
@@ -116,8 +134,28 @@ query Post ($path: String!) {
   }
 }
 
+form{
+  margin-top: 30px;
+  text-align: center;
+}
+form p input{
+  width: 460px;
+  height: 50px;
+}
+form p button{
+  padding: 10px;
+}
+h9 {
+  font-size: 13px;
+  font-style: italic;
+}
+#newsletter{
+  text-align: center;
+}
+
 .post-comments {
   padding: calc(var(--space) / 2);
+  margin: 20px 150px 0px 150px;
   
   &:empty {
     display: none;
