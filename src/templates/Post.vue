@@ -25,17 +25,19 @@
       <!-- Add comment widgets here -->
       <div id="disqus_thread"></div>  
       <h3 id="newsletter"><strong>Subscribe to my Newsletter.</strong></h3>  
-      <form @submit.prevent="handleSubmit" name="subscription_list" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+       
+      <form action="https://usebasin.com/f/a04accbf7cb5" method="POST">
         <p>
           <input 
           type="email" 
           id="email" 
           name="email" 
-         @input="ev => form.email = ev.target.value"
           placeholder="Email" 
           />
         </p>
+        <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
         <p>
+
           <button type="submit">Subscribe</button>
         </p>
         <h6>Subscribe to get my latest content by email, i wont send you spam.</h6>
@@ -47,7 +49,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 import PostMeta from '~/components/PostMeta';
 import PostTags from '~/components/PostTags';
 import Author from '~/components/Author.vue';
@@ -76,34 +77,7 @@ export default {
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   },
-  methods: {
-    encode(data) {
-      console.log(data);
-      return Object.keys(data)
-        .map(key => `${encodeURIComponent(key)} = ${encodeURIComponent(data[key])}`)
-        .join('&');
-    },
-    handleSubmit() {
-      const axiosConfig = {
-        header: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-      };
-      axios.post('/', this.encode({
-        'form-name': 'subscription_list',
-        ...this.form,
-      }),
-      axiosConfig,
-      );
-    },
-  },
-  data() {
-    return {
-      form: {
-        email: '',
-      },
-    };
-  },
+
 };
 </script>
 
