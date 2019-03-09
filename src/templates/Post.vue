@@ -63,7 +63,7 @@ export default {
     };
   },
   created() {
-    const d = document;
+    const d = window.document;
     const s = d.createElement('script');
     s.src = 'https://paschal-dev.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());

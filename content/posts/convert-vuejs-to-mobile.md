@@ -22,7 +22,8 @@ If cordova is installed, we can confirm
 
 ```sh
 cordova --version
-``` 
+```
+
 Then, we can install the plugin
 
 ```sh
