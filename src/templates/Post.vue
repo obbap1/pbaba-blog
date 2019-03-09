@@ -144,11 +144,11 @@ query Post ($path: String!) {
 }
 
 form{
-  margin-top: 30px;
+  margin-top: 60px;
   text-align: center;
 }
 form p input{
-  width: 460px;
+  width: calc(var(--space) * +8);
   height: 50px;
 }
 form p button{
@@ -164,8 +164,10 @@ h6 {
 
 .post-comments {
   padding: calc(var(--space) / 2);
-  margin: 20px 150px 0px 150px;
-  
+  margin-left: calc(var(--space) * +1);
+  margin-top: calc(var(--space) * +1);
+  margin-bottom: calc(var(--space) * +1);
+  margin-right: calc(var(--space) * +1);
   &:empty {
     display: none;
   }
