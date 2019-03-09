@@ -148,7 +148,7 @@ form{
   text-align: center;
 }
 form p input{
-  width: calc(var(--space) * +8);
+  width: 70%;
   height: 50px;
 }
 form p button{
