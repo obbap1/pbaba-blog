@@ -37,7 +37,7 @@
         </p>
         <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
         <p>
-
+          
           <button type="submit">Subscribe</button>
         </p>
         <h6>Subscribe to get my latest content by email, i wont send you spam.</h6>
@@ -158,16 +158,18 @@ h6 {
   font-size: 13px;
   font-style: italic;
 }
-#newsletter{
+#newsletter,{
   text-align: center;
 }
-
+ div.g-recaptcha{
+  margin: 0px 100px 20px 450px;
+ }
 .post-comments {
   padding: calc(var(--space) / 2);
-  margin-left: calc(var(--space) * +1);
-  margin-top: calc(var(--space) * +1);
-  margin-bottom: calc(var(--space) * +1);
-  margin-right: calc(var(--space) * +1);
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  margin-right: 20px;
   &:empty {
     display: none;
   }
