@@ -67,6 +67,26 @@ export default {
           name: 'description',
           content: this.$page.post.description,
         },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image',
+        },
+        {
+          name: 'twitter:title',
+          content: this.$page.post.title,
+        },
+        {
+          name: 'twitter:description',
+          content: this.$page.post.description,
+        },
+        {
+          name: 'twitter:image',
+          content: this.$page.post.coverImage,
+        },
+        {
+          name: 'twitter:image:alt',
+          content: '📖',
+        },
       ],
     };
   },
