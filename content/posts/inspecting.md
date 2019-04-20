@@ -94,10 +94,10 @@ This is a system that grants write permissions to authenticated users and blocks
 
 We want to analyze the logical path or process that leads to a user getting blocked.
 
-A: Unvalidated User
-B: Writes to the system
-C: Exceeding rate limit(10)
-D: User gets blocked
+A: Unvalidated User <br>
+B: Writes to the system <br />
+C: Exceeding rate limit(10) <br/>
+D: User gets blocked <br />
 
 ```js
 /*If an Unvalidated user writes to the system or if a validated user exceeds the limit, the user gets blocked.*/
