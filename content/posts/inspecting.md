@@ -88,7 +88,7 @@ class User {
 
 }
 ```
-This is a system that grants write permissions to authenticated users, and blocks users if they try to write to the system with an unvalidated email address or tries to write to the system after the limit of 10 commits is exceeded.
+This is a system that grants write permissions to authenticated users and blocks users if they try to write to the system with an unvalidated email address or tries to write to the system after the limit of 10 commits is exceeded.
 
 ***Using De Morgan's Law***
 
@@ -148,7 +148,7 @@ Since we have three variables, we will have 8 possible outcomes (2 ^ 3) of true 
 | F  | T   | T  | T  |  T   |  T  |    T   |
 | F  | T   | F  | T  |  T   |  T  |    T   |
 
-So we can see that, we only have truthy outcomes when at least one of the variables is false, or at least one of the variables is true. They can't be all false or all true. Which makes sense, you can't be unvalidated and still have write permissions.
+So we can see that we only have truthy outcomes when at least one of the variables is false, or at least one of the variables is true. They can't be all false or all true. Which makes sense, you can't be invalidated and still have to write permissions.
 
 # Conclusion
 There are so many other rules and laws that come with analyzing logical models, this is just a slice of the pie, I came across it and I liked it, so I decided to share. Thanks for reading! 🌹 🌹
