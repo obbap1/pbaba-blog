@@ -9,10 +9,10 @@ canonical_url: false
 description: "With De Morgan's law and truth tables, we will be able to simplify logical expressions and models, find possibilities and even bugs. These processes help us organize, ..."
 ---
 
-# Introduction 🥑
+# Introduction 
 With De Morgan's law and truth tables, we will be able to simplify logical expressions and models, find possibilities and even bugs. These processes help us organize, simplify and almost even visualize how things will work. Truth tables are also useful in designing logic circuits and logic gates. Let's dive in.
 
-# De Morgan's Law 💯
+# De Morgan's Law 
 
 > The complement of the union of two sets is the intersection of their complements and the complement of the intersection of two sets is the union of their complements.
 
@@ -55,10 +55,10 @@ using the template that its either summer or winter that are available*/
 !Summer AND !Winter = !(Summer OR Winter)
 ```
 
-# Truth tables ⚖️
+# Truth tables 
 We can use truth tables to analyze the internal variables that our model relies on. The rows represent the possible states or combinations for the variables. Each variable has two possible outcomes, so we use the 2 ^ n formula, where n is the number of variables. Each outcome can either be ***True*** or ***False***.
 
-# Use Case 🥇
+# Use Case 
 
 ```js
 class User {
