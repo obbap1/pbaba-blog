@@ -126,9 +126,9 @@ If we have to create a system with the following requirements
 * An Unvalidated user cannot have write permissions
 * The user either has read or write permissions.
 
-A: Unvalidated User
-B: read permissions
-C: write permissions
+A: Unvalidated User <br>
+B: read permissions <br>
+C: write permissions <br>
 
 1. A ---> B (Unvalidated User has only read permissions ) <br>
 This statement is only true, when the output(B) is true, or when they are both(A and B) false.
