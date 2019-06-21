@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-
     <header class="header">
       <div class="header__left">
-        <Logo v-if="showLogo" /> 
+        <g-link v-if="!showLogo" class="logo" to="/projects">
+          <span class="logo__text"> Projects &rarr;</span>
+        </g-link>
+        <Logo v-if="showLogo"/>
       </div>
-      
-      <div class="header__right">        
-        <ToggleTheme />
+
+      <div class="header__right">
+        <ToggleTheme/>
       </div>
     </header>
 
@@ -16,26 +18,28 @@
     </main>
 
     <footer class="footer">
-      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
+      <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}.</span>
       <span class="footer__links">Made By PBABA 🔥</span>
-      <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
+      <span class="footer__links">
+        Powered by
+        <a href="//gridsome.org">Gridsome</a>
+      </span>
     </footer>
-
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue';
-import ToggleTheme from '~/components/ToggleTheme.vue';
+import Logo from "~/components/Logo.vue";
+import ToggleTheme from "~/components/ToggleTheme.vue";
 
 export default {
   props: {
-    showLogo: { default: true },
+    showLogo: { default: true }
   },
   components: {
     Logo,
-    ToggleTheme,
-  },
+    ToggleTheme
+  }
 };
 </script>
 
@@ -46,7 +50,7 @@ export default {
   align-items: center;
   min-height: var(--header-height);
   padding: 0 calc(var(--space) / 2);
-  top:0;
+  top: 0;
   z-index: 10;
 
   &__left,
@@ -73,10 +77,10 @@ export default {
   justify-content: center;
   padding: calc(var(--space) / 2);
   text-align: center;
-  font-size: .8em;
+  font-size: 0.8em;
 
   > span {
-    margin: 0 .35em;
+    margin: 0 0.35em;
   }
 
   a {

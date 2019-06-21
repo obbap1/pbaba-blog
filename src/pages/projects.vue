@@ -1,11 +1,11 @@
 <template>
-  <Layout :show-logo="false">
+  <Layout :show-logo="true">
     <!-- Author intro -->
-    <Author :show-title="true" />
+    <ProjectIntro :show-title="true" />
     
     <!-- List posts -->
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <ProjectCard v-for="(project,index) in Projects" :key="index" :post="project"/>
     </div>
 
   </Layout>
@@ -41,12 +41,15 @@
 
 <script>
 import Author from '~/components/Author.vue';
-import PostCard from '~/components/PostCard.vue';
+import ProjectCard from '~/components/ProjectCard.vue';
+import ProjectIntro from '~/components/ProjectIntro.vue';
+import Projects from '../projects';
 
 export default {
   components: {
     Author,
-    PostCard,
+    ProjectCard,
+    ProjectIntro
   },
   metaInfo: {
     title: 'Daily Chronicles',
@@ -54,5 +57,10 @@ export default {
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity: 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin: 'anonymous' },
     ],
   },
+  data(){
+      return {
+          Projects
+      }
+  }
 };
 </script>
