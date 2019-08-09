@@ -20,7 +20,7 @@ Three models help us with handling replicas:
 2. Peer to Peer Model
 3. Master-Slave Model
 
-The ***Primary-Backup model***, exposes only one instance to all external processes. This instance is the master instance, and it has read and write permissions. All other instances or replicas have only read permissions. So with this model, we are sure that only one instance can be updated, and then the change is propagated. The drawbacks of this model are that it isn't scalable, because only one instance is exposed and if that instance crashes before propagation happens, we will still encounter inconsistencies.
+The ***Primary-Backup model*** exposes only one instance to all external processes. This instance is the master instance, and it has read and write permissions. All other instances or replicas have only read permissions. So with this model, we are sure that only one instance can be updated, and then the change is propagated. The drawbacks of this model are that it isn't scalable, because only one instance is exposed and if that instance crashes before propagation happens, we will still encounter inconsistencies.
 
 The ***Peer to Peer*** model gives all the instances read and write permissions. With this model, we will observe performance issues, especially when we need to propagate very large chunks of data. Maintaining global consistency will also be difficult. It is best suited for applications that require low data replication. User-specific applications for example.
 
@@ -57,7 +57,7 @@ docker network create election-algorithm_default
 docker network ls
 ```
 # The Rabbitmq Server 
-The Server will use the management alpine, so ports 5672 and 15672 will be used. If there are any processes running on this port, you will need to kill them. 
+The Server will use the management alpine, so ports 5672 and 15672 will be used. If any processes are running on this port, you will need to kill them. 
 ```sh
 # Run the rabbitmq image in detached mode
 docker run -it -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.6-management-alpine
