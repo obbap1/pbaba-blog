@@ -13,7 +13,7 @@ description: "While building distributed systems, Transparency is a very importa
 
 While building distributed systems, Transparency is a very important factor. The Engineer has to consider Access transparency, Concurrency transparency, Location transparency, Replication transparency, etc. Replication transparency answers the question, 'Will my data resources always be consistent ?'.
 
-# What is Replica transparency?
+# What is Replication transparency?
 
 With distributed systems, we can access different copies of our resources, which helps with redundancy, backup, speed, etc. Having replicas of a particular resource, also raises the issue of consistency. How do we ensure that all the replicas of a particular resource are consistent at all times? Two-phase commits can help in ensuring that if for any reason, all the replicas of a particular instance don't get updated may be due to timeouts or propagation errors, the instances will be rolled back to their previous state. This means that the update is lost and has to be done again.
 
