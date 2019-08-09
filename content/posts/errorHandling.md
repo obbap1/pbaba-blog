@@ -4,7 +4,7 @@ date: 2019-05-19
 published: true
 tags: ['JavaScipt', 'Servers','Linux', 'Computer Science']
 series: false
-cover_image: https://res.cloudinary.com/pbaba/image/upload/v1558194878/ales-krivec-3535-unsplash_p56dfa.jpg
+cover_image:
 canonical_url: false
 description: "I thought the game of thrones would be the most stressful thing i came across this week, but searching through logs, handling errors can be very tedious, and knowing what exactly is happening on your server is keen to finding solutions. So let's find out how we can handle..."
 ---

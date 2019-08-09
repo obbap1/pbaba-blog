@@ -4,7 +4,7 @@ date: 2019-04-20
 published: true
 tags: ['JavaScript', 'Logic','Math', 'Computer Science']
 series: false
-cover_image: https://res.cloudinary.com/pbaba/image/upload/v1555733838/set_m4qev9.jpg
+cover_image: 
 canonical_url: false
 description: "With De Morgan's law and truth tables, we will be able to simplify logical expressions and models, find possibilities and even bugs. These processes help us organize, ..."
 ---

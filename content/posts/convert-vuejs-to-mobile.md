@@ -4,7 +4,7 @@ date: 2019-03-09
 published: true
 tags: ['JavaScript', 'Vue JS']
 series: false
-cover_image: https://res.cloudinary.com/pbaba/image/upload/v1552104300/photo-1484590169808-5496a8931599_vzre9x.jpg
+cover_image:
 canonical_url: false
 description: "Given the limited time and know how developers have to ship mobile applications, hybrid applications helped in making things easier. Frameworks such as ionic, which was built on apache cordova, help us build mobile apps with HTML,CSS and JS..."
 ---

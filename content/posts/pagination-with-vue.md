@@ -4,7 +4,7 @@ date: 2019-06-21
 published: true
 tags: ['VueJS', 'PouchDB','Performance', 'Caching']
 series: false
-cover_image: https://res.cloudinary.com/pbaba/image/upload/v1561991050/RBE8Xtr5PTvu_1_jnf18u.jpg
+cover_image: 
 canonical_url: false
 description: "When the responses from a server come after just one request, and we have to paginate on the front end, its easier to handle. This is because we have all the data..."
 ---

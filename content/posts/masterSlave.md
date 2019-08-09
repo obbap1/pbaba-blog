@@ -4,7 +4,7 @@ date: 2019-08-09
 published: true
 tags: ['Node JS', 'Docker','Distributed Systems', 'Rabbitmq', 'Algorithms']
 series: false
-cover_image: https://res.cloudinary.com/pbaba/image/upload/v1565380199/element5-digital-T9CXBZLUvic-unsplash_r0tsyk.jpg
+cover_image:
 canonical_url: false
 description: "While building distributed systems, Transparency is a very important factor. The Engineer has to consider Access transparency, Concurrency transparency, Location transparency, Replication transparency etc..."
 ---
