@@ -1,6 +1,6 @@
 ---
 title:  Understand Master-Slave Relationships using the Election Algorithm 
-date: 2019-04-20
+date: 2019-08-09
 published: true
 tags: ['Node JS', 'Docker','Distributed Systems', 'Rabbitmq', 'Algorithms']
 series: false
