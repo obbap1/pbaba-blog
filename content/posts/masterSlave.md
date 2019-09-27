@@ -31,7 +31,7 @@ The **_Master-Slave_** model has one instance as the Master model, with read and
 
 # Which Slave is selected to be the Master?
 
-This is where the Election algorithm comes in. It is used to elect a slave after the master node fails.
+This is where the Election algorithm comes in. It is used to elect a slave(to be master) after the master node fails.
 We have the
 
 1. Bully Election Algorithm
