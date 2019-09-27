@@ -1,10 +1,10 @@
 ---
 title: Write better Vue JS code
-date: 2019-08-09
+date: 2019-09-27
 published: true
 tags: ["JavaScript", "Vue JS", "Best Practices", "Vuex"]
 series: false
-cover_image: https://res.cloudinary.com/pbaba/image/upload/v1569597307/vuejs-tutorial_2d2a853c-aa2f-44b0-80df-933b495f77f8_g8rhrx.webp
+cover_image:
 canonical_url: false
 description: "Architecture might not matter at the start of a project, but the ease at which components can be added or removed without breaking stuff shows how well the codebase was structured..."
 ---
