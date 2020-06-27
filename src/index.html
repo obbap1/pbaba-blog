@@ -2,6 +2,15 @@
 <html ${htmlAttrs}>
   <head>
     ${head}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@_obbap" />
+    <meta name="twitter:creator" content="@_obbap" />
+    <meta name="twitter:title" content="Obba Paschal" />
+    <meta name="twitter:description" content="My Thoughts" />
+    <meta
+      name="twitter:image"
+      content="https://res.cloudinary.com/pbaba/image/upload/v1593263642/author_c7nqyi.jpg"
+    />
   </head>
   <body ${bodyAttrs}>
     <script>
@@ -18,7 +27,7 @@
         let preferredTheme;
         try {
           preferredTheme = localStorage.getItem('theme');
-        } catch (err) { }
+        } catch (err) {}
 
         window.__setPreferredTheme = function (newTheme) {
           setTheme(newTheme);
@@ -29,15 +38,14 @@
 
         const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
         darkQuery.addListener((e) => {
-    window.__setPreferredTheme(e.matches ? 'dark' : 'light');
-  });
+          window.__setPreferredTheme(e.matches ? 'dark' : 'light');
+        });
 
         setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
-      }());
+      })();
     </script>
-   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-    ${app}
-    ${scripts}
+    ${app} ${scripts}
   </body>
 </html>
