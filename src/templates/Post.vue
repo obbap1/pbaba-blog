@@ -24,9 +24,9 @@
       </div>
     </div>
 
-    <div class="post-comments">
-      <!-- Add comment widgets here -->
-      <div id="disqus_thread"></div>
+    <!-- <div class="post-comments"> -->
+    <!-- Add comment widgets here -->
+    <!-- <div id="disqus_thread"></div>
       <h3 id="newsletter"><strong>Subscribe to my Newsletter.</strong></h3>
 
       <form action="https://usebasin.com/f/a04accbf7cb5" method="POST">
@@ -44,7 +44,7 @@
           Subscribe to get my latest content by email, i wont send you spam.
         </h6>
       </form>
-    </div>
+    </div> -->
 
     <Author class="post-author" />
   </Layout>
