@@ -2,12 +2,15 @@
   <Layout :show-logo="false">
     <!-- Author intro -->
     <Author :show-title="true" />
-    
+
     <!-- List posts -->
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard
+        v-for="edge in $page.posts.edges"
+        :key="edge.node.id"
+        :post="edge.node"
+      />
     </div>
-
   </Layout>
 </template>
 
@@ -19,7 +22,6 @@
         id
         title
         path
-        coverImage
         tags {
           id
           title
@@ -51,7 +53,13 @@ export default {
   metaInfo: {
     title: 'Daily Chronicles',
     link: [
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity: 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin: 'anonymous' },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
+        integrity:
+          'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr',
+        crossorigin: 'anonymous',
+      },
     ],
   },
 };

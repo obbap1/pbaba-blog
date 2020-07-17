@@ -4,14 +4,17 @@
       <h1 class="post-title__text">
         {{ $page.post.title }}
       </h1>
-      
-      <PostMeta :post="$page.post" />
 
+      <PostMeta :post="$page.post" />
     </div>
-    
+
     <div class="post content-box">
       <div class="post__header">
-        <g-image alt="Cover image" v-if="$page.post.coverImage" :src="$page.post.coverImage" />
+        <g-image
+          alt="Cover image"
+          v-if="$page.post.coverImage"
+          :src="$page.post.coverImage"
+        />
       </div>
 
       <div class="post__content" v-html="$page.post.content" />
@@ -23,26 +26,25 @@
 
     <div class="post-comments">
       <!-- Add comment widgets here -->
-      <div id="disqus_thread"></div>  
-      <h3 id="newsletter"><strong>Subscribe to my Newsletter.</strong></h3>  
-       
+      <div id="disqus_thread"></div>
+      <h3 id="newsletter"><strong>Subscribe to my Newsletter.</strong></h3>
+
       <form action="https://usebasin.com/f/a04accbf7cb5" method="POST">
         <p>
-          <input 
-          type="email" 
-          id="email" 
-          name="email" 
-          placeholder="Email" 
-          />
+          <input type="email" id="email" name="email" placeholder="Email" />
         </p>
-        <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
+        <div
+          class="g-recaptcha"
+          data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"
+        ></div>
         <p>
-          
           <button type="submit">Subscribe</button>
         </p>
-        <h6>Subscribe to get my latest content by email, i wont send you spam.</h6>
-    </form>
-  </div>
+        <h6>
+          Subscribe to get my latest content by email, i wont send you spam.
+        </h6>
+      </form>
+    </div>
 
     <Author class="post-author" />
   </Layout>
@@ -97,7 +99,6 @@ export default {
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   },
-
 };
 </script>
 
@@ -126,7 +127,6 @@ query Post ($path: String!) {
 }
 
 .post {
-
   &__header {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);
@@ -134,7 +134,7 @@ query Post ($path: String!) {
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
     border-radius: var(--radius) var(--radius) 0 0;
-    
+
     img {
       width: 100%;
     }
@@ -150,7 +150,7 @@ query Post ($path: String!) {
     }
 
     p {
-      font-size: 1.2em;
+      font-size: 1em;
       color: var(--title-color);
     }
 
@@ -163,27 +163,27 @@ query Post ($path: String!) {
   }
 }
 
-form{
+form {
   margin-top: 60px;
   text-align: center;
 }
-form p input{
+form p input {
   width: 70%;
   height: 50px;
 }
-form p button{
+form p button {
   padding: 10px;
 }
 h6 {
   font-size: 13px;
   font-style: italic;
 }
-#newsletter,{
+#newsletter {
   text-align: center;
 }
- div.g-recaptcha{
+div.g-recaptcha {
   margin: 0px 100px 20px 450px;
- }
+}
 .post-comments {
   padding: calc(var(--space) / 2);
   margin-left: 20px;
