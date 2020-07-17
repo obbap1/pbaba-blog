@@ -46,7 +46,7 @@
       </form>
     </div> -->
 
-    <Author class="post-author" />
+    <!-- <Author class="post-author" /> -->
   </Layout>
 </template>
 
@@ -71,7 +71,7 @@ export default {
         },
         {
           name: 'twitter:card',
-          content: 'summary_large_image',
+          content: 'summary',
         },
         {
           name: 'twitter:title',
