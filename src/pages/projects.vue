@@ -2,12 +2,15 @@
   <Layout :show-logo="true">
     <!-- Author intro -->
     <ProjectIntro :show-title="true" />
-    
+
     <!-- List posts -->
     <div class="posts">
-      <ProjectCard v-for="(project,index) in Projects" :key="index" :post="project"/>
+      <ProjectCard
+        v-for="(project, index) in Projects"
+        :key="index"
+        :post="project"
+      />
     </div>
-
   </Layout>
 </template>
 
@@ -19,7 +22,6 @@
         id
         title
         path
-        coverImage
         tags {
           id
           title
@@ -49,18 +51,24 @@ export default {
   components: {
     Author,
     ProjectCard,
-    ProjectIntro
+    ProjectIntro,
   },
   metaInfo: {
     title: 'Daily Chronicles',
     link: [
-      { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css', integrity: 'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin: 'anonymous' },
+      {
+        rel: 'stylesheet',
+        href: 'https://use.fontawesome.com/releases/v5.7.2/css/all.css',
+        integrity:
+          'sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr',
+        crossorigin: 'anonymous',
+      },
     ],
   },
-  data(){
-      return {
-          Projects
-      }
-  }
+  data() {
+    return {
+      Projects,
+    };
+  },
 };
 </script>
