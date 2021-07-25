@@ -9,19 +9,7 @@
 
 <script>
 export default {
-  props: ['post'],
-  metaInfo: {
-   title: post.title,
-   meta: [
-     {name: "twitter:card", content:"summary_large_image"},
-     {name: "twitter:site", content:"@_obbap"},
-     {name: "twitter:creator", content:"@_obbap"},
-     {name: "twitter:title", content: post.tags.title},
-     {name: "twitter:image", content: post.coverImage},
-     {name: "twitter:description", content: post.description},
-     {name: 'twitter:image:alt', content: '📖'}
-   ]
-  }
+  props: ['post']
 };
 </script>
 
