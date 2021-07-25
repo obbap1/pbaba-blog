@@ -4,7 +4,7 @@ date: 2021-07-24
 published: true
 tags: ['Blockchain']
 series: false
-cover_image:
+cover_image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qst11r7pdpg7ukmovefp.png
 canonical_url: false
 description: "The web currently works in silos. Every platform operates as an autonomous system. So every organization, for example, Google, has its database of users..."
 ---
