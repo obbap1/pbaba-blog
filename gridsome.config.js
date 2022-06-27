@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome Minimal Blog Starter',
-  siteUrl: 'https://gridsome-starter-minimal-blog.netlify.com/',
-  siteDescription: 'A minimalist blog built with Gridsome',
+  siteName: 'Thoughts',
+  siteUrl: 'https://paschal.dev',
+  siteDescription: 'Paschal\'s blog',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -33,8 +33,8 @@ module.exports = {
       options: {
         contentTypes: ['Post'],
         feedOptions: {
-          title: 'A Gridsome Minimal Blog',
-          description: 'Best blog feed evah.'
+          title: 'Paschal\'s Blog',
+          description: 'Thoughts'
         },
         rss: {
           enabled: true,
