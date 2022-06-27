@@ -52,7 +52,9 @@ query Post ($path: String!) {
     title
     content
     date (format: "D MMMM YYYY")
-    timeToRead
+    timeToRead 
+    image
+    description
   }
 }
 </page-query>
