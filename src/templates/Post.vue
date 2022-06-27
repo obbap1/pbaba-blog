@@ -16,26 +16,28 @@ export default {
   components: {
     Header,
   },
-  metaInfo: {
-    meta: [
-      { name: "twitter:title", content: this.$page.post.title },
-      { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "twitter:description",
-        content: this.$page.post.description,
-      },
+  metaInfo() {
+    return {
+      meta: [
+        { name: "twitter:title", content: this.$page.post.title },
+        { name: "twitter:card", content: "summary_large_image" },
+        {
+          name: "twitter:description",
+          content: this.$page.post.description,
+        },
 
-      {
-        name: "twitter:site",
-        content: "https://twitter.com/_Obbap",
-      },
-      {
-        name: "twitter:creator",
-        content: "https://twitter.com/_Obbap",
-      },
-      { name: "twitter:image", content: this.$page.post.image },
-    ],
-    script: [{ src: "https://platform.twitter.com/widgets.js", async: true }],
+        {
+          name: "twitter:site",
+          content: "https://twitter.com/_Obbap",
+        },
+        {
+          name: "twitter:creator",
+          content: "https://twitter.com/_Obbap",
+        },
+        { name: "twitter:image", content: this.$page.post.image },
+      ],
+      script: [{ src: "https://platform.twitter.com/widgets.js", async: true }],
+    };
   },
 };
 </script>
