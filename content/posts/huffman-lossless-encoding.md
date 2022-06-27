@@ -1,7 +1,8 @@
 ---
 title: "Huffman Coding: Lossless Compression"
-description: ""
+description: "How does huffman coding work ?"
 date:  2022-06-26
+image: https://unsplash.com/photos/iOBTE2xsYko?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 ---
 
 # What is Compression
