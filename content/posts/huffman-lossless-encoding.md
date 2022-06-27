@@ -1,8 +1,8 @@
 ---
 title: "Huffman Coding: Lossless Compression"
-description: "How does huffman coding work ?"
-date:  2022-06-26
-image: https://unsplash.com/photos/iOBTE2xsYko?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+description: "In computing terms, Compression is representing a value with fewer bits than it normally is. Take the string "hello" for example, How is "hello" represented or stored in memory?"
+date:  2022-06-27
+image: "https://res.cloudinary.com/pbaba/image/upload/v1656296028/philip-strong-iOBTE2xsYko-unsplash_jindzj.jpg"
 ---
 
 # What is Compression
