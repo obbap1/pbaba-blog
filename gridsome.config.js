@@ -58,6 +58,16 @@ module.exports = {
           content: node.content
         })
       }
+    },
+    {
+      use: 'gridsome-plugin-robots-txt',
+      policy: [
+        {
+          userAgent: "*",
+          allow: "/",
+          crawlDelay: 10,
+        }
+      ]
     }
   ]
 }
