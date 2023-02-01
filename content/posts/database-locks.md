@@ -2,6 +2,7 @@
 title: "Locks"
 description: ""
 date: 2023-02-01
+image: "https://res.cloudinary.com/pbaba/image/upload/v1675260880/imattsmart-Vp3oWLsPOss-unsplash_qhhg92.jpg"
 ---
 
 # Introduction
