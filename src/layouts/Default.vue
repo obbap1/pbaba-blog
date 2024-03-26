@@ -6,7 +6,7 @@
       <div class="footer-links">
         <a target="_blank" href="https://medium.com/@_Obbap">Medium</a>
         <a target="_blank" href="https://dev.to/obbap">Dev.to</a>
-        <a target="_blank" href="https://twitter.com/_Obbap">Twitter</a>
+        <a target="_blank" href="https://twitter.com/paschalobba">Twitter</a>
         <a target="_blank" href="https://github.com/obbap1">Github</a>
       </div>
     </div>
