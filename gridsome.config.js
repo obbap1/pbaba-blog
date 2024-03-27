@@ -61,13 +61,15 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-robots-txt',
-      policy: [
-        {
-          userAgent: "*",
-          allow: "/",
-          crawlDelay: 10,
-        }
-      ]
+      options: {
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+            crawlDelay: 10,
+          }
+        ]
+    }
     }
   ]
 }
