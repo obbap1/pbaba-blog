@@ -2,6 +2,7 @@
 title: "Tetrahedron with Mesh and OFF"
 description: ""
 date: 2024-07-17
+image: https://res.cloudinary.com/pbaba/image/upload/v1721205181/michael-dziedzic-nc11Hg2ja-s-unsplash_jeto7j.jpg
 ---
 
 ## Introduction
