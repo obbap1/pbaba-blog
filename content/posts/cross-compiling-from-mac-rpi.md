@@ -1,5 +1,5 @@
 ---
-title: "Cross compiling a small rust server from my MacOS to Raspberry pi"
+title: "Cross compiling a small rust server from MacOS to Raspberry pi"
 description: ""
 date:  2024-03-26
 image: 
