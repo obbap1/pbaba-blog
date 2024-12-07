@@ -77,7 +77,7 @@ When the tree is completed, a walk is done from the root to every leaf node, and
 
 ![tree](https://res.cloudinary.com/pbaba/image/upload/v1656290513/treetwo_grsajz.png)
 
-From the example above, you can see that "A" is represented as "00" because it's left of its two parent nodes. Characters "A" and "D" are represented by only 2 bits each because they have higher frequencies of 7 and 5 respectively and "C", "D", "E" and "F" have more bits (3) because of lower frequencies.
+From the example above, you can see that "A" is represented as "00" because it's left of its two parent nodes. Characters "A" and "B" are represented by only 2 bits each because they have higher frequencies of 7 and 5 respectively and "C", "D", "E" and "F" have more bits (3) because of lower frequencies.
 
 ### Decoding / Decompression
 The compressed bytes and the Huffman tree will be sent over the wire to the decoder, and the decoder will just recurse through the bits and when it hits a leaf node, it records the value, goes back to the root node, and walks a different path.
