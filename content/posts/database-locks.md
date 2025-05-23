@@ -64,5 +64,5 @@ SELECT firstname, lastname FROM users FOR UPDATE SKIP LOCKED;
 if the result spans multiple rows, then `skip locked` will skip all the locked rows and return the other rows. Eg. if user `5` is still locked then this query will return something like `[1,2,3,4,6]` for example. 
 
 # **References** 
-1. [Martin Kleppmann - Redlock(https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
+1. [Martin Kleppmann - Redlock](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
 2. [Postgres Documentation - Locking](https://www.postgresql.org/docs/current/explicit-locking.html) 
