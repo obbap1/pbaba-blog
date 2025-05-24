@@ -2,7 +2,7 @@
 title: "Pipelining for Memcached"
 description: ""
 date: 2025-05-23
-image: "https://asset.cloudinary.com/pbaba/298ad36df76aa83407af0961a731aaa0"
+image: "https://res.cloudinary.com/pbaba/image/upload/v1748034661/christian-bass-1rZG5sCtCrg-unsplash_vyyksm.jpg"
 ---
 
 Typical Client-Server protocols operate a request - response model.
