@@ -56,6 +56,7 @@ A q-digest is also tunable. It allows us set a threshold for compression. For th
 Fine-tuning and choosing the right threshold is very important because if it's too high, then we don’t compress anything, which means we gain nothing from the q-digest. If it's too low, we compress everything, which means that we get useless information from the q-digest.
 
 For example, if everything is compressed:
+
 | Number            | Occurence.   |
 |-------------------|--------------|
 | 1,2,3,4,5,6       |  19          | 
@@ -114,14 +115,20 @@ This means that the leaf nodes collapse into their parent, and we have reclaimed
 
 #### Queries
 This data structure allows us to perform queries like:
+<p>
 1. <b>Quantile Query</b>
 This answers the question "what number is at this quantile". This is achieved by doing an inorder traversal.
+</p>
+<p>
 2. <b>Inverse Quantile Query</b>
 This is the opposite of a quantile query. It answers the question "On what quantile is this number placed". This is achieved by doing an inorder traversal.
+</p>
+<p>
 3. <b>Range Query</b>
 This answers the question "how many numbers in this dataset are between numbers x and y". This is achieved by taking the difference of two inverse quantile queries. 
+</p>
 
-I used [matplotlib](https://matplotlib.org/) to explore different error tolerances while calculating quantiles.
+I used [matplotlib](https://matplotlib.org) to explore different error tolerances while calculating quantiles.
 
 When the error tolerance is zero, we observe that the q-digest values match the real values. Conversely, when the error tolerance reaches 50%, a significant deviation is evident.
 ##### Zero error tolerance
