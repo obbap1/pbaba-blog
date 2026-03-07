@@ -69,7 +69,7 @@ For example, The [age dataset](#age-dataset) has 19 items. if we set the error t
 then the threshold is `19 * 0.25` = `4.75`. This means every item with a frequency less than 4.75 is compressed.  
 
 #### Building a Q-digest
-At its core, a q-digest is a binary search tree. This tree comprises of all the numbers the q-digest should be aware of.
+At its core, a q-digest is a binary tree. This tree comprises of all the numbers the q-digest should be aware of.
 
 To better understand this, I wrote a Rust library called [Quest](https://github.com/obbap1/quest/tree/master) that implements a q-digest. 
 
@@ -103,7 +103,7 @@ After all the items from the dataset have been inserted, the cumulative counts o
 
 ![tree-with-count](https://res.cloudinary.com/pbaba/image/upload/v1772407044/withcount.drawio_ymeznk.png)
 
-When the summation of the leaf nodes and their parent doesn’t meet the threshold, then they are compressed. In this case, the leftmost and rightmost subtrees have counts 3 and 0, respectively, and the threshold is 4.75:
+When the summation of frequencies in a sub-tree ie. the leaf nodes and their parent don’t meet the threshold, then they are compressed. In this case, the leftmost and rightmost subtrees have counts 3 and 0, respectively, and the threshold is 4.75:
 
 ![eligible-compression-tree](https://res.cloudinary.com/pbaba/image/upload/v1772407044/eligibles.drawio_bymh8o.png)
 
@@ -121,7 +121,7 @@ This is the opposite of a quantile query. It answers the question "On what quant
 3. <b>Range Query</b>
 This answers the question "how many numbers in this dataset are between numbers x and y". This is achieved by taking the difference of two inverse quantile queries. 
 
-I used matplotlib to explore different error tolerances while calculating quantiles.
+I used [matplotlib](https://matplotlib.org/) to explore different error tolerances while calculating quantiles.
 
 When the error tolerance is zero, we observe that the q-digest values match the real values. Conversely, when the error tolerance reaches 50%, a significant deviation is evident.
 ##### Zero error tolerance
