@@ -88,7 +88,7 @@ The numbers in the [age dataset](#age-dataset) range from 1 to 6. This means the
 
 The `power_of_two` argument will be 3 because 2^3 = 8, which is enough to cover the maximum value of the dataset, 6.
 It needs to be a power of 2 because we need to build a balanced tree.
-This also means that the range is bounded, and it doesn’t accept arbitrary numbers, even if this can be handled gracefully [^1].
+This also means that the range is bounded, and it doesn't accept arbitrary numbers, even if this can be handled gracefully <sup><a href="#fn-1">1</a></sup>.
 
 `error_tolerance` has been explained and will stay at 25%.
 
@@ -151,5 +151,4 @@ When the error tolerance is zero, we observe that the q-digest values match the 
 
 [Probabilistic Data Structures and Algorithms for Big Data Applications](https://www.gakhov.com/books/pdsa.html)
 
-[^1]: In quest this is handled gracefully, if inputs exceed the bounds of the q-digest then they default to said bounds. 
-    Eg, if the q-digest for the age dataset gets an input of 0, this will be recorded as 1 as this is the minimum and if it gets another input of 512 this will be recorded as 8 as this is the maximum.
+<p id="fn-1"><small><sup>1</sup> In quest this is handled gracefully, if inputs exceed the bounds of the q-digest then they default to said bounds. Eg, if the q-digest for the age dataset gets an input of 0, this will be recorded as 1 as this is the minimum and if it gets another input of 512 this will be recorded as 8 as this is the maximum.</small></p>

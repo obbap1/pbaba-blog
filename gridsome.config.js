@@ -71,5 +71,8 @@ module.exports = {
         ]
     }
     }
-  ]
+  ],
+  transformers: {
+    remark: {}
+  }
 }
