@@ -1,7 +1,7 @@
 ---
 title: "Q-Digest"
 description: ""
-date: 2026-03-02
+date: 2026-03-07
 image: https://res.cloudinary.com/pbaba/image/upload/v1772407044/originalforsure.drawio_liyubd.png
 ---
 
