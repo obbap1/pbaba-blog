@@ -25,7 +25,7 @@ These categories are:
 
 With these categories, the numbers in our [original dataset](#latency-dataset) will all be recorded in the “greater than 30 milliseconds” bucket rather than in three distinct buckets. This data structure has helped us summarize our distribution. We have successfully reduced our cardinality from a billion to three.
 
-## Q-Digest
+## A different kind of summary
 The Q-Digest data structure, similar to a histogram, summarizes distributions but in a different way.
 It retains the dense parts of the distribution while compressing the sparse parts. This means it preserves important information! while staying within predictable memory constraints.
 
