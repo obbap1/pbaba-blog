@@ -2,6 +2,7 @@
   <main class="layout" role="main">
     <Header />
     <slot/>
+    <Subscribe />
     <div class="footer">
       <div class="footer-links">
         <a target="_blank" href="https://medium.com/@_Obbap">Medium</a>
@@ -15,10 +16,12 @@
 
 <script>
 import Header from "@/components/Header";
+import Subscribe from "@/components/Subscribe";
 
 export default {
   components: {
-    Header
+    Header,
+    Subscribe
   }
 }
 </script>
